@@ -1,0 +1,25 @@
+{
+  "name": "x-deploy-api",
+  "version": "0.0.0",
+  "dependencies": {
+    "express": "^4.0.0",
+    "mongoose": "^3.8.8",
+    "x-config": "0.0.14",
+    "body-parser": "^1.0.2",
+    "async": "^0.8.0",
+    "redis": "^0.10.1"
+  },
+  "devDependencies": {
+    "mocha": "1.13.0",
+    "chai": "1.8.1",
+    "sinon": "1.7.3",
+    "istanbul": "~0.2.4",
+    "mocha-istanbul": "~0.2.0",
+    "jshint": "2.3.0"
+  },
+  "scripts": {
+    "start":  "node lib/index.js",
+    "pretest": "node node_modules/jshint/bin/jshint ./lib/.",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "id": "deploy-api",
+    "env": {
+        "development": "^.{2}[d]",
+        "test": "^.{2}[t]",
+        "staging": "^.{4}[s]",
+        "production": "^.{2}[pn]"
+    },
+    "db": {
+		"url": "mongodb://localhost/deploy_db"
+	},
+	"server": {
+		"port": 9001,
+		"auth": {
+			"tokens": ["zrHl59Qd3S2QTg5cD1YFJwf8NGA22NMA"]
+		}
+	},
+	"messaging": {
+		"redis": { "port": 6379, "host": "localhost" }
+	},
+	"artifacts": {
+		"path": "/data/deploy-api/artifacts/"
+	}
+}
