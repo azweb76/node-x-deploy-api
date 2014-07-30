@@ -1,5 +1,5 @@
 {
-    "id": "deploy-api",
+    "id": "x-deploy-api",
     "env": {
         "development": "^.{2}[d]",
         "test": "^.{2}[t]",
@@ -16,9 +16,9 @@
 		}
 	},
 	"messaging": {
-		"redis": { "port": 6379, "host": "localhost" }
+		"redis": { "port": 6379, "host": "172.19.112.179" }
 	},
 	"artifacts": {
-		"path": "/data/deploy-api/artifacts/"
+		"path": "/data/x-deploy-api/artifacts/"
 	}
 }
